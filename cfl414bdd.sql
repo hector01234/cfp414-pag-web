@@ -11,7 +11,7 @@ CREATE TABLE tb_curs (
 CREATE TABLE tb_dias (
     id_dia int NOT NULL, 
     dia varchar(10),
-    PRIMARY KEY id_dias
+    PRIMARY KEY (id_dia)
 );
 
 CREATE TABLE tb_horarios (
@@ -65,7 +65,7 @@ VALUES (1,1,'9:10','12:00'),
        (4,2,'12:00','16:00'),
        (5,1,'9:00','12:00'),
        (5,2,'9:00','12:00')
-);
+;
 INSERT INTO tb_curs (nom_curs, desc_curs, inscriptos) 
 VALUES ('programacion', 'curso de introduccion a la programacion', 14), 
        ('maquillaje','maquillaje artistico', 9), 
@@ -73,7 +73,7 @@ VALUES ('programacion', 'curso de introduccion a la programacion', 14),
        ('costura','corte y confeccion', 9),
        ('hoteleria','administracion de hoteles',12),
        ('zapateria','reparacion de calzado',16)
-);
+;
 
 /********************************CONSULTAS************************************/
  
